@@ -1,0 +1,351 @@
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+
+a {
+    color: #000;
+}
+
+.border-logo {
+    border: 2px solid black;
+    border-left: white;
+    border-right: white;
+
+}
+
+.about-hero {
+    background-image: url('/imgs/about.jpg');
+    min-height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.about-hero-text {
+    color: #343a40 !important;
+    font-size: 25px;
+    font-family: "roboto";
+    border: 1px solid black;
+}
+
+/* header */
+
+.logo {
+    color: black;
+}
+
+.header {
+    background-color: #f5db7e;
+    ;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.header li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+    background-color: #f5db7e;
+    color: black;
+}
+
+a.nav-link {
+    padding-left: 10px !important;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+    background-color: #f5db7e;
+}
+.btn-touch {
+    background-color: #f5db7e;
+
+}
+
+.header li.active a {
+    background-color: #121212;
+    /* color: white; */
+    color: rgb(245, 219, 126) !important;
+    font-weight: bold;
+}
+
+.header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+.header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+    top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+    top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked~.menu {
+    max-height: 240px;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon {
+    background: transparent;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+/* main body container */
+.container {
+    width: 100%;
+    margin: 60px auto;
+    padding: 2px 4px;
+}
+
+.container-fluid {
+    margin-top: 100px;
+    min-height: 80vh;
+}
+
+.title-episode h2 {
+    font-weight: bold;
+    font-family: "roboto";
+}
+
+/* footer */
+
+
+
+footer {
+    background: #f5db7e;
+    padding-bottom: 20px;
+    height: 150px;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    padding-top: 20px;
+    font-family: "roboto";
+}
+
+footer ul {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    padding-left: 0px;
+}
+
+
+.container-contact {
+    border-radius: 10px
+}
+
+
+.text-muted {
+    font-family: "roboto";
+}
+
+
+.fa-envelope {
+    font-size: 25px;
+    font-weight: bold
+}
+
+.icon {
+    color: #ffc00b;
+
+}
+
+a {
+    color: black;
+}
+
+.contact:hover {
+    background-color: #f5db7e;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    color: black;
+}
+
+form .container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: -10px auto;
+    color: black;
+
+}
+
+input,
+textarea,
+.form-control {
+    outline: none;
+    border: none
+}
+
+.input-field {
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 5px
+}
+
+.input-field:hover {
+    border: 2px solid #ffc00b;
+    color: #ffc00b;
+    cursor: pointer
+}
+
+label {
+    font-weight: 500
+}
+
+.fa-mobile {
+    font-size: 20px
+}
+
+#msg {
+    height: 220px
+}
+
+
+.btn-book {
+    background-color: #ffc00b;
+    color: black;
+    padding: 5px 10px;
+    width: 200px;
+    margin: 10px auto
+}
+
+.mobile-info {
+    display: none
+}
+
+@media(min-width:992px) and (max-width:1199px) {
+    form {
+        width: 75%
+    }
+
+    .container {
+        margin-top: 50px
+    }
+}
+
+@media(max-width:767px) {
+    .mobile-info {
+        display: inline
+    }
+
+    .contact-info {
+        display: none;
+        color: black
+    }
+
+    .contact {
+        margin: 10px 0;
+        border: 1px solid #ffc00b;
+        border-radius: 5px
+    }
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+    .header li {
+        float: left;
+        min-width: 90px;
+        text-align: center;
+    }
+
+    .header li a {
+        padding: 20px 30px;
+    }
+
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .header .menu-icon {
+        display: none;
+    }
+
+    .container {
+        width: 90%;
+        margin: 60px auto;
+    }
+}
