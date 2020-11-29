@@ -15,7 +15,7 @@
     <p class="text-dark about-hero-text p-lg-5">
       You can listen to Candace and Jess on
     </p>
-    <div class="px-lg-5">
+    <div class="px-lg-5  ml-5 ">
       <a href="https://open.spotify.com/show/6uvK4fFQjQDVPUf4P9xYN4"><img src="/imgs/spotify.png" alt="spotify" /></a>
       <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9jYW5kYWNlYW5kamVzcy5saWJzeW4uY29tL3Jzcw?sa=X&ved=2ahUKEwjDysX_9cvsAhUBx54KHZFbC40Q9sEGegQIARAH"><img src="/imgs/google.png" alt="google" /></a>
       <a href="https://podcasts.apple.com/ca/podcast/candace-and-jess-judge-a-book-by-its-cover/id1435982288"><img src="/imgs/apple.png" alt="Apple" /></a>
