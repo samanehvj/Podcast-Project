@@ -38,7 +38,7 @@ $action = $this->getAction();
             <ul class="navbar-nav mx-lg-5 sv-nav">
                 <li class="nav-item
       <?php
-        if (basename($_SERVER['PHP_SELF'], '.php') == 'index') {
+        if ($action == 'index') {
             echo 'active';
         }
         ?>
@@ -50,7 +50,7 @@ $action = $this->getAction();
 
                 <li class="nav-item
        <?php
-        if (basename($_SERVER['PHP_SELF'], '.php') == 'about') {
+        if ($action == 'about') {
             echo 'active';
         }
         ?>
@@ -59,7 +59,7 @@ $action = $this->getAction();
                 </li>
                 <li class="nav-item 
       <?php
-        if (basename($_SERVER['PHP_SELF'], '.php') == 'episode') {
+        if ($action == 'episode') {
             echo 'active';
         }
         ?>
@@ -68,7 +68,7 @@ $action = $this->getAction();
                 </li>
                 <li class="nav-item 
       <?php
-        if (basename($_SERVER['PHP_SELF'], '.php') == 'blog') {
+        if ($action == 'blog') {
             echo 'active';
         }
         ?>
@@ -79,7 +79,8 @@ $action = $this->getAction();
 
                 <li class="nav-item 
       <?php
-        if (basename($_SERVER['PHP_SELF'], '.php') == 'contact') {
+        // if (basename($_SERVER['PHP_SELF'], '.php') == 'contact') {
+        if ($action == 'contact') {
             echo 'active';
         }
         ?>
