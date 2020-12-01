@@ -68,7 +68,7 @@ class EpisodeController extends Controller
     {
         if (isset($_SESSION['userId']) && $_SESSION['userId']) {
 
-            if (!isset($_POST['title']) || empty($_POST['tile'])) {
+            if (!isset($_POST['title']) || empty($_POST['title'])) {
                 $_SESSION['err'] = 'All fields should be filled';
                 $this->go('episode', 'adminList');
             }
