@@ -1,7 +1,7 @@
 <?php include VIEW . 'layouts/header.php' ?>
 
 
-<div class="container-fluid ">
+<div class=" ">
     <img src="/imgs/hero3.jpeg" class="img-fluid w-100 ">
 </div>
 
