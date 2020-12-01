@@ -10,7 +10,7 @@ class Episode {
 
     public function getAll()
     {
-        $sql = "SELECT * FROM episodes";
+        $sql = "SELECT * FROM episodes ORDER BY id DESC";
         $this->db->query($sql);
         return $this->db->resultSet();
     }
