@@ -9,7 +9,7 @@
     <div class="d-flex justify-content-center pt-5">
         <h2 class="font-weight-bold text-light">Get in touch!</h2>
     </div>
-    <div class="d-md-flex flex-md-row justify-content-center py-3">
+    <div class="d-md-flex flex-md-row justify-content-center py-4">
 
 
         <div class="d-flex flex-column contact text-light px-4">
